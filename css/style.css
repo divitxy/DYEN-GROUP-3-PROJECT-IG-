@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 80%;
+    margin: 100px auto;
+    height: 700px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for desktop */
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.main-container div:first-child {
+    grid-column: 1/2;
+}
+
+.main-container .image-div {
+    width: 180px;
+    height: 180px;
+    border: 1px dotted white;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.main-container .image-div > div:first-child {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .image-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.main-container .image-div > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container .image-div > div:last-child .items {
+    background-color: #353232;
+    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.main-container .image-div > div:last-child .space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container .image-div > div:last-child .space div:last-child {
+    margin-top: 10px;
+    display: flex;
+}
+
+.main-container > div:last-child {
+    grid-column: 2/8;
+}
+
+.main-container > div:last-child .profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Corrected 'justify-content: start' */
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.main-container > div:last-child div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-container > div:last-child > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Corrected 'justify-content: start' */
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 0px; /* Removed large margin for better alignment */
+}
+
+.main-container > div:last-child .profile div {
+    margin-right: 50px;
+}
+
+.main-container > div:last-child .profile div:nth-child(2),
+.main-container > div:last-child .profile div:nth-child(3) {
+    background-color: #373030;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+    .main-container {
+        grid-template-columns: repeat(1, 1fr); /* Switch to 1 column */
+    }
+    .main-container > div:last-child {
+        grid-column: 1/2; /* Span the single column on mobile */
+        justify-content: center;
+    }
+    .main-container .image-div {
+        justify-content: center;
+    }
+    .main-container > div:last-child .profile {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-container > div:last-child .profile > div {
+        width: 80%;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .main-container > div:last-child > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 100%; /* Make sure it spans full width */
+    }
+
+    .main-container > div:last-child > div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        background-color: green;
+        width: 100%; /* Full width on mobile */
+    }
+}
