@@ -616,7 +616,7 @@ footer{
     }
 
     .logo img {
-        content: url('logo.png');
+        content: url('/assets/logo.png');
         width: 130px;
         margin-top: 10px; 
     }
