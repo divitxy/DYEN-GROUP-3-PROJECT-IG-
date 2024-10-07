@@ -12,4 +12,4 @@ window.addEventListener("load", () => {
     }, 400);
   }, 2400);
 });
-
+ 

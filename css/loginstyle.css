@@ -59,6 +59,12 @@ button {
   margin: 4px 0;
   border-radius: 5px;
 }
+
+form a {
+  text-decoration: none;
+  color: #fff;
+  width: 200px;
+}
 button[type="submit"] {
   height: 30px;
   font-size: 14px;
@@ -126,104 +132,27 @@ hr {
 }
 
 footer{
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 100%;
   flex-direction: column;
-  box-sizing: border-box;
   display: flex;
-  flex-shrink: 0;
-  padding-left: 16px;
-  align-items: stretch;
-  padding-right: 16px;
-  position: relative;
-  margin-left: 0;
-  order: 5;
-  vertical-align: baseline;
-  margin-right: 0;
+  padding-left: 16px; 
 }
 
 .insta-footer {
-  overflow-y: visible;
   margin-bottom: 52px;
-  overflow-x: visible;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  flex-direction: column;
-  box-sizing: border-box;
-  display: flex;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-items: stretch;
-  align-self: auto;
-  justify-content: flex-start;
-  position: relative;
-  flex-grow: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
-.links {
-  overflow-y: visible;
-  margin-top: 24px;
-  overflow-x: visible;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  flex-direction: column;
-  box-sizing: border-box;
-  display: flex;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-items: stretch;
-  align-self: auto;
-  justify-content: flex-start;
-  position: relative;
-  flex-grow: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
+
 .insta {
-  overflow-y: visible;
-  overflow-x: visible;
-  align-content: stretch;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  flex-direction: row;
-  box-sizing: border-box;
   display: flex;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-items: stretch;
   justify-content: center;
-  position: relative;
-  flex-grow: 0;
   flex-wrap: wrap;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  align-self: auto;
+
 }
 
 .meta {
-  overflow-y: visible;
   margin-bottom: 12px;
-  overflow-x: visible;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  flex-direction: column;
-  box-sizing: border-box;
-  display: flex;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-items: stretch;
-  align-self: auto;
-  justify-content: flex-start;
-  position: relative;
   margin-left: 8px;
   margin-right: 8px;
-  flex-grow: 0;
-  border-top-left-radius: 0;
 }
 
 .meta a{
@@ -240,87 +169,30 @@ footer{
 }
 
 .lang {
-  overflow-y: visible;
   margin-bottom: 12px;
-  overflow-x: visible;
   margin-top: 12px;
-  border-bottom-left-radius: 0;
   justify-content: center;
-  background-color: transparent;
-  box-sizing: border-box;
   display: flex;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-items: stretch;
-  flex-direction: row;
-  align-self: auto;
-  position: relative;
-  flex-grow: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .dif-lang {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  vertical-align: top;
 }
 
 .cont {
-  overflow-y: visible;
-  overflow-x: visible;
-  border-bottom-left-radius: 0;
-  justify-content: center;
-  background-color: transparent;
-  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  border-bottom-right-radius: 0;
-  position: static;
-  flex-direction: row;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .sub {
-  line-height: 16px;
-  overflow-y: visible;
-  min-width: 0;
-  margin-bottom: 0;
-  overflow-x: visible;
-  max-width: 100%;
-  margin-top: 0;
   font-weight: 400;
-  margin-right: 0;
-  word-wrap: break-word;
-  position: relative;
-  display: block;
-  text-wrap: wrap;
-  margin-left: 0;
-  word-break: break-word;
   color: rgb(115, 115, 115);
   font-size: 13px;
 }
 
 .sub-cont {
-  overflow-y: visible;
-  overflow-x: visible;
   margin-left: 4px;
-  justify-content: center;
-  border-bottom-left-radius: 0;
-  flex-direction: column;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-self: auto;
-  position: relative;
-  flex-grow: 0; 
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .down {
@@ -356,43 +228,22 @@ footer{
 }
 
 .copy {
-  overflow-y: visible;
-  overflow-x: visible;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  flex-direction: column;
-  box-sizing: border-box;
-  display: flex;
-  border-bottom-right-radius: 0;
-  flex-shrink: 0;
-  align-items: stretch;
-  align-self: auto;
-  justify-content: flex-start;
-  position: relative;
   margin-left: 16px;
-  flex-grow: 0; 
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .sub-copy {
-  line-height: 16px;
-  overflow-y: visible;
   min-width: 0;
-  margin-bottom: 0;
-  overflow-x: visible;
   max-width: 100%;
   margin-top: 0;
   font-weight: 400;
   margin-right: 0;
   word-wrap: break-word;
-  position: relative;
   display: block;
   text-wrap: wrap;
-  margin-left: 0;
   word-break: break-word;
   color: rgb(115, 115, 115);
   font-size: 13px;
+  
 }
 
 @media (max-width: 850px) {
