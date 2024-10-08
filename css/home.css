@@ -98,9 +98,17 @@ li i {
     flex-grow: 1;
 }
 
+.sub {
+    padding-top: 14px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
 .cont {
     margin-left: 220px;
-    width: calc(100% - 520px);
     width: 90%;
     padding: 10px;
 }
@@ -539,6 +547,10 @@ footer{
     display: none;
 }
 
+.bottom2-nav {
+    display: none;
+}
+
 @media screen and (max-width: 1115px) {
     body {
         overflow-x: hidden;
@@ -662,6 +674,7 @@ footer{
         display: none;
     }
 
+    
     .bottom-nav {
         display: flex;
         justify-content: space-around;
@@ -686,5 +699,124 @@ footer{
         margin-left: 0;
         width: 100%;
         margin-top: 60px;
+        max-width: 630px;
+    }
+
+    .stories {
+        background-color: #ffffff;
+        margin-left: 0;
+        padding: 8px 0;
+        height: 100px;
+    }
+
+    .story {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+        min-height: 70px;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    body {
+        background-color: #ffffff;
+       
+    }
+
+    .cont {
+        margin-top: 44px;
+        padding: 0;
+    }
+
+    .stories {
+        background-color: #ffffff;
+        border-bottom: 1px solid #dbdbdb;
+        margin-left: 0;
+        padding: 8px 0;
+        height: 100px;
+    }
+
+    .story {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        min-height: 56px;
+        margin-left: 8px;
+    }
+
+    .next-button {
+        display: none;
+    }
+
+    .feed {
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    .imgBx {
+        min-height: 500px;
+        width: 100%;
+    }
+
+    .imgBx img {
+        border-radius: 3px;
+    }
+
+    .suggestions {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+    .bottom2-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        border-top: 1px solid #dbdbdb;
+        padding: 10px 0;
+        z-index: 1;
+        height: 50px;
+    }
+
+    .bottom2-nav a {
+        color: #262626;
+        font-size: 22px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .logo img {
+        width: 103px;
+    }
+
+    header {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .left-nav {
+        padding: 0;
+        width: 100%;
     }
 }
